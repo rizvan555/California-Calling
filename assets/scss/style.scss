@@ -8,6 +8,7 @@
 
 body {
   font-size: 10px;
+  font-family: "Lora", serif;
 }
 header {
   display: flex;
@@ -29,6 +30,7 @@ header {
   }
   p {
     font-size: $headerP-fs;
+    font-family: "Work Sans", sans-serif;
   }
   .header_bottom-container {
     display: flex;
@@ -53,6 +55,7 @@ main {
       font-size: 4rem;
       color: $fc;
       width: 50vw;
+      font-family: "Work Sans", sans-serif;
     }
     article {
       .info-desc {
@@ -64,6 +67,7 @@ main {
         padding: 0 0 15vh 0;
         p {
           font-size: $headerP-fs;
+          font-family: "Work Sans", sans-serif;
         }
         h3 {
           color: $fc;
@@ -157,6 +161,9 @@ main {
     padding: 30vh 0 20vh 0;
     .page3__article1 {
       width: 20vw;
+      h2 {
+        display: none;
+      }
       p {
         font-size: $headerP-fs;
         margin-bottom: 2vh;
@@ -204,6 +211,10 @@ main {
     color: #000;
     position: relative;
     overflow: hidden;
+
+    h2 {
+      display: none;
+    }
 
     .circle-image {
       width: 30vw;
@@ -327,3 +338,4 @@ footer {
     }
   }
 }
+@import "./media-600px.scss";

@@ -1,0 +1,317 @@
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @import "./variable.scss";
+  @import "./mixin.scss";
+
+  header {
+    padding: 15vh 0 0 0;
+    background-color: #000;
+
+    h1 {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 0.9rem;
+      color: #000;
+      -webkit-text-stroke: 1px white;
+      text-stroke: 1px white;
+    }
+    p {
+      font-size: $headerP-fs;
+      font-family: "Work Sans", sans-serif;
+    }
+    .header_bottom-container {
+      display: flex;
+      gap: 20vw;
+      margin-top: 10vh;
+      button {
+        @include button-style;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+
+  main {
+    .page1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10vw;
+      background-color: #000;
+
+      p {
+        font-size: 1rem;
+        color: $fc;
+        width: 50vw;
+        font-family: "Work Sans", sans-serif;
+      }
+      article {
+        .info-desc {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 8vh;
+          padding: 0 0 20vh 0;
+
+          div {
+            margin-left: 40px;
+            width: 20vw;
+            p {
+              font-size: $headerP-fs;
+              font-family: "Work Sans", sans-serif;
+            }
+            h3 {
+              color: $fc;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .page2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-bottom: 30vh;
+
+      .page2__article1 {
+        width: 70vw;
+        padding: 35vh 0 2vh 0;
+        h1 {
+          font-size: 1.2rem;
+          font-weight: 100;
+          letter-spacing: 0;
+        }
+        p {
+          font-size: $headerP-fs;
+          line-height: 20px;
+        }
+      }
+      .page2__article2 {
+        padding: 0 0 50vh 0;
+        width: 70vw;
+        p {
+          font-size: $headerP-fs;
+          line-height: 20px;
+        }
+      }
+      .page2__image1 {
+        width: $p2_is;
+        position: absolute;
+        right: 10vw;
+        top: 60px;
+      }
+      .page2__image2 {
+        width: $p2_is;
+        position: absolute;
+        left: 10vw;
+        top: 13vh;
+      }
+      .page2__image3 {
+        width: $p2_is;
+        position: absolute;
+        right: 40vw;
+        top: 13vh;
+      }
+      .page2__image4 {
+        width: 30vw;
+        position: absolute;
+        left: 15vw;
+        top: 80vh;
+      }
+      .page2__image5 {
+        width: 30vw;
+        position: absolute;
+        right: 15vw;
+        top: 80vh;
+      }
+      .page2__image6 {
+        width: 30vw;
+        position: absolute;
+        left: 15vw;
+        bottom: 5vw;
+      }
+      .page2__image7 {
+        width: 30vw;
+        position: absolute;
+        right: 15vw;
+        bottom: 5vh;
+        z-index: 1;
+      }
+    }
+  }
+
+  .page3 {
+    padding: 0 0 40vh 0;
+
+    .page3__top-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10vh 0 0 0;
+
+      .page3__article1 {
+        p {
+          margin-left: 10vw;
+          font-size: $headerP-fs;
+          margin-bottom: 2vh;
+        }
+        h2 {
+          display: block;
+          width: 30vw;
+        }
+        h1 {
+          display: none;
+        }
+      }
+      .page3__article2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        p {
+          font-size: 0.5rem;
+          margin-bottom: 2vh;
+          width: 50vw;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+    .page3__image-section {
+      position: relative;
+      .gb1 {
+        width: 50vw;
+        top: 6vh;
+        left: 15vw;
+        position: absolute;
+      }
+      .gb2 {
+        width: 20vw;
+        position: absolute;
+        right: 25vw;
+        top: 16vh;
+        z-index: 1;
+      }
+    }
+  }
+
+  .page4 {
+    background-color: #fff;
+    color: #fff;
+
+    .page4__top-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30vh 0 50vh 0;
+      color: #000;
+
+      h2 {
+        display: block;
+        width: 30vw;
+        margin-left: -9vw;
+      }
+      .circle-image {
+        display: none;
+      }
+      .page4__article1 {
+        width: 20vw;
+        p {
+          font-size: 0.4rem;
+          margin-bottom: 2vh;
+        }
+        h1 {
+          display: none;
+        }
+      }
+      .page4__article2 {
+        width: 80vw;
+        p {
+          font-size: 0.8rem;
+          margin-bottom: 2vh;
+          width: 70vw;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+    .page4__image-section {
+      position: relative;
+
+      .pb1 {
+        width: 20vw;
+        left: 20vw;
+        bottom: 4vh;
+        position: absolute;
+        z-index: 2;
+      }
+      .pb2 {
+        width: 30vw;
+        right: 35vw;
+        bottom: 5vh;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10vh 5vw;
+    position: relative;
+
+    .left-box {
+      display: flex;
+      flex-direction: column;
+      width: 60vw;
+      h5 {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 3vh;
+      }
+      button {
+        @include button-style;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .left-box__bottom-p {
+        font-size: 0.9rem;
+      }
+    }
+    .right-box {
+      display: none;
+
+      .footer__image-box {
+        display: none;
+      }
+    }
+  }
+}
