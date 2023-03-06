@@ -18,10 +18,10 @@ header {
   background-color: #000;
 }
 header h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 header h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #000;
   -webkit-text-stroke: 1px white;
   text-stroke: 1px white;
@@ -31,18 +31,30 @@ header p {
 }
 header .header_bottom-container {
   display: flex;
+  align-items: center;
   gap: 70vw;
   margin-top: 10vh;
 }
+header .header_bottom-container button {
+  width: 7vw;
+  padding: 12px;
+  margin-bottom: 10vh;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
 
 main .page1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 10vw;
   background-color: #000;
 }
 main .page1 p {
-  margin: 0 auto;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
-  width: 60vw;
+  width: 50vw;
 }
 main .page1 article .info-desc {
   display: flex;
@@ -80,7 +92,7 @@ main .page2 .page2__article1 p {
   line-height: 30px;
 }
 main .page2 .page2__article2 {
-  padding: 70vh 0 65vh 0;
+  padding: 70vh 0 50vh 0;
   width: 27vw;
 }
 main .page2 .page2__article2 p {
@@ -121,25 +133,25 @@ main .page2 .page2__image6 {
   width: 25vw;
   position: absolute;
   left: 0;
-  bottom: 60vh;
+  bottom: 45vh;
 }
 main .page2 .page2__image7 {
   width: 25vw;
   position: absolute;
   right: 15vw;
-  bottom: -10vh;
+  bottom: -8vh;
   z-index: 1;
 }
 
 .page3 {
   background-color: #000;
   color: #fff;
-  position: relative;
+  padding: 0 0 80vh 0;
 }
 .page3 .page3__top-side {
   display: flex;
   justify-content: space-evenly;
-  padding: 30vh 0 10vh 0;
+  padding: 30vh 0 20vh 0;
 }
 .page3 .page3__top-side .page3__article1 {
   width: 20vw;
@@ -161,27 +173,40 @@ main .page2 .page2__image7 {
 .page3 .page3__top-side .page3__article2 h1 {
   font-size: 3rem;
 }
-.page3 .gb1 {
+.page3 .page3__image-section {
+  position: relative;
+}
+.page3 .page3__image-section .gb1 {
   width: 60vw;
   padding-left: 10vw;
+  position: absolute;
 }
-.page3 .gb2 {
+.page3 .page3__image-section .gb2 {
   width: 30vw;
   position: absolute;
   right: 15vw;
-  bottom: 7vh;
+  top: 13vh;
+  z-index: 1;
 }
 
 .page4 {
   background-color: #fff;
   color: #fff;
-  position: relative;
 }
 .page4 .page4__top-side {
   display: flex;
   justify-content: space-evenly;
-  padding: 30vh 0 10vh 0;
+  padding: 30vh 0 130vh 0;
   color: #000;
+  position: relative;
+  overflow: hidden;
+}
+.page4 .page4__top-side .circle-image {
+  width: 30vw;
+  position: absolute;
+  right: -9vw;
+  top: -16vh;
+  z-index: 0;
 }
 .page4 .page4__top-side .page4__article1 {
   width: 20vw;
@@ -203,16 +228,99 @@ main .page2 .page2__image7 {
 .page4 .page4__top-side .page4__article2 h1 {
   font-size: 3rem;
 }
-.page4 .pb1 {
-  width: 30vw;
-  padding-left: 10vw;
-  position: absolute;
+.page4 .page4__image-section {
+  position: relative;
 }
-.page4 .pb2 {
-  width: 60vw;
-  right: 15vw;
-  top: 80vh;
+.page4 .page4__image-section .pb1 {
+  width: 30vw;
+  left: 10vw;
+  bottom: 40vh;
   position: absolute;
+  z-index: 2;
+}
+.page4 .page4__image-section .pb2 {
+  width: 55vw;
+  right: 10vw;
+  bottom: 25vh;
+  position: absolute;
+  z-index: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 10vh 5vw;
+  position: relative;
+}
+footer .left-box {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+footer .left-box h5 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+footer .left-box p {
+  font-size: 1.5rem;
+  margin-bottom: 3vh;
+}
+footer .left-box button {
+  width: 7vw;
+  padding: 12px;
+  margin-bottom: 10vh;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+footer .left-box img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+footer .left-box .left-box__bottom-p {
+  font-size: 0.9rem;
+}
+footer .right-box {
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60vh;
+  width: 30vw;
+}
+footer .right-box .footer__image-box {
+  position: absolute;
+  right: 5vw;
+  bottom: 3vh;
+}
+footer .right-box .footer__image-box img {
+  width: 6vw;
+  height: 4vh;
+}
+footer .right-box .white-line {
+  position: absolute;
+  padding: 5px;
+  top: 23vh;
+  right: -24vw;
+  background-color: #fff;
+  color: #000;
+  font-size: 3.5rem;
+  width: 57vw;
+  transform: rotate(45deg);
+}
+footer .right-box .white-line span {
+  color: #000;
+}
+footer .right-box .white-line p {
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
 }
 
 /*# sourceMappingURL=style.css.map */
