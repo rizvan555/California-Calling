@@ -527,25 +527,22 @@ footer .right-box .white-line p {
     width: 20vw;
     position: none;
     left: 10vw;
-    top: 37vh;
+    top: 47vh;
   }
   main .page2 .page2__image-container .page2__image5 {
     width: 20vw;
     position: none;
     right: 40vw;
-    top: 37vh;
+    top: 47vh;
   }
   main .page2 .page2__image-container .page2__image6 {
     width: 20vw;
     position: none;
     left: 70vw;
-    top: 37vh;
+    top: 47vh;
   }
   main .page2 .page2__image-container .page2__image7 {
-    width: 50vw;
-    position: none;
-    left: 25vw;
-    top: 50vh;
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -646,6 +643,7 @@ footer .right-box .white-line p {
     font-size: 3rem;
   }
   .page4 .page4__image-section {
+    margin-top: 10vh;
     position: relative;
   }
   .page4 .page4__image-section .pb1 {

@@ -132,25 +132,22 @@
           width: $p2_is;
           position: none;
           left: 10vw;
-          top: 37vh;
+          top: 47vh;
         }
         .page2__image5 {
           width: $p2_is;
           position: none;
           right: 40vw;
-          top: 37vh;
+          top: 47vh;
         }
         .page2__image6 {
           width: $p2_is;
           position: none;
           left: 70vw;
-          top: 37vh;
+          top: 47vh;
         }
         .page2__image7 {
-          width: 50vw;
-          position: none;
-          left: 25vw;
-          top: 50vh;
+          display: none;
         }
       }
     }
@@ -257,6 +254,7 @@
       }
     }
     .page4__image-section {
+      margin-top: 10vh;
       position: relative;
 
       .pb1 {
