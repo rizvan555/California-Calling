@@ -44,22 +44,20 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0 10vw;
       background-color: #000;
 
       p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: $fc;
-        width: 50vw;
+        width: 55vw;
         font-family: "Work Sans", sans-serif;
       }
       article {
         .info-desc {
           display: flex;
           justify-content: center;
-          flex-direction: row;
+          flex-direction: column;
           align-items: center;
-          margin-top: 8vh;
           padding: 0 0 20vh 0;
 
           div {
@@ -83,12 +81,12 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      position: relative;
+      position: none;
       padding-bottom: 30vh;
 
       .page2__article1 {
         width: 70vw;
-        padding: 35vh 0 2vh 0;
+        padding: 5vh 0 2vh 0;
         h1 {
           font-size: 1.2rem;
           font-weight: 100;
@@ -96,7 +94,7 @@
         }
         p {
           font-size: $headerP-fs;
-          line-height: 20px;
+          line-height: 10px;
         }
       }
       .page2__article2 {
@@ -104,51 +102,47 @@
         width: 70vw;
         p {
           font-size: $headerP-fs;
-          line-height: 20px;
+          line-height: 10px;
         }
       }
       .page2__image1 {
         width: $p2_is;
-        position: absolute;
+        position: none;
         right: 10vw;
-        top: 60px;
+        top: 60vh;
       }
       .page2__image2 {
         width: $p2_is;
-        position: absolute;
+        position: none;
         left: 10vw;
-        top: 13vh;
+        top: 60vh;
       }
       .page2__image3 {
         width: $p2_is;
-        position: absolute;
+        position: none;
         right: 40vw;
-        top: 13vh;
+        top: 60vh;
       }
       .page2__image4 {
-        width: 30vw;
-        position: absolute;
-        left: 15vw;
+        width: $p2_is;
+        position: none;
+        left: 10vw;
         top: 80vh;
       }
       .page2__image5 {
-        width: 30vw;
-        position: absolute;
-        right: 15vw;
+        width: $p2_is;
+        position: none;
+        right: 40vw;
         top: 80vh;
       }
       .page2__image6 {
-        width: 30vw;
-        position: absolute;
-        left: 15vw;
-        bottom: 5vw;
+        width: $p2_is;
+        position: none;
+        left: 70vw;
+        top: 80vh;
       }
       .page2__image7 {
-        width: 30vw;
-        position: absolute;
-        right: 15vw;
-        bottom: 5vh;
-        z-index: 1;
+        display: none;
       }
     }
   }
