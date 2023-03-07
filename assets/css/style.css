@@ -248,6 +248,15 @@ main .page2 .page2__image-container .page2__image7 {
   right: -9vw;
   top: -16vh;
   z-index: 0;
+  animation: rotate-center 12s linear infinite both;
+}
+@keyframes rotate-center {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 1turn;
+  }
 }
 .page4 .page4__top-side .page4__article1 {
   width: 20vw;
@@ -374,13 +383,21 @@ footer .right-box .white-line span {
   color: #000;
 }
 footer .right-box .white-line p {
-  animation: fadeOutLeft;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
   color: #fff;
   -webkit-text-stroke: 1px #000;
   text-stroke: 1px #000;
+  animation: banner 10s ease infinite;
+}
+@keyframes banner {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @media only screen and (max-width: 600px) {
