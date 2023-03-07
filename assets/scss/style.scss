@@ -48,14 +48,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 0 10vw;
+    padding: 0 10vw 22vh 10vw;
     background-color: #000;
+    position: relative;
 
-    p {
-      font-size: 4rem;
+    .page1__main-contain {
+      font-size: 5rem;
       color: $fc;
-      width: 50vw;
-      font-family: "Work Sans", sans-serif;
+      padding-bottom: 10vh;
+      width: 60vw;
+    }
+    .map-image {
+      width: 35vw;
+      position: absolute;
+      right: 5vw;
+      top: 50vh;
     }
     article {
       .info-desc {
@@ -66,8 +73,10 @@ main {
         margin-top: 10vh;
         padding: 0 0 15vh 0;
         p {
+          color: $fc;
           font-size: $headerP-fs;
           font-family: "Work Sans", sans-serif;
+          width: 60vw;
         }
         h3 {
           color: $fc;
@@ -82,11 +91,10 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    position: relative;
     .page2__article1 {
       width: 27vw;
       padding: 45vh 0;
-      h1 {
+      h2 {
         font-size: 5rem;
         font-weight: 100;
         letter-spacing: 1px;
@@ -97,55 +105,60 @@ main {
       }
     }
     .page2__article2 {
-      padding: 70vh 0 50vh 0;
+      padding: 60vh 0 40vh 0;
       width: 27vw;
       p {
         font-size: $headerP-fs;
         line-height: 30px;
       }
     }
-    .page2__image1 {
-      width: $p2_is;
-      position: absolute;
-      right: 10vw;
-      top: -60px;
-    }
-    .page2__image2 {
-      width: $p2_is;
-      position: absolute;
-      left: 2vw;
-      top: 20vh;
-    }
-    .page2__image3 {
-      width: $p2_is;
-      position: absolute;
-      right: 0;
-      top: 60vh;
-    }
-    .page2__image4 {
-      width: $p2_is;
-      position: absolute;
-      left: 10vw;
-      top: 120vh;
-    }
-    .page2__image5 {
-      width: $p2_is;
-      position: absolute;
-      right: 10vw;
-      top: 140vh;
-    }
-    .page2__image6 {
-      width: $p2_is;
-      position: absolute;
-      left: 0;
-      bottom: 45vh;
-    }
-    .page2__image7 {
-      width: $p2_is;
-      position: absolute;
-      right: 15vw;
-      bottom: -8vh;
-      z-index: 1;
+    .page2__image-container {
+      position: relative;
+      width: 100%;
+
+      .page2__image1 {
+        width: $p2_is;
+        position: absolute;
+        right: 10vw;
+        top: -16vh;
+      }
+      .page2__image2 {
+        width: $p2_is;
+        position: absolute;
+        left: 2vw;
+        top: 20vh;
+      }
+      .page2__image3 {
+        width: $p2_is;
+        position: absolute;
+        right: 0;
+        top: 60vh;
+      }
+      .page2__image4 {
+        width: $p2_is;
+        position: absolute;
+        left: 10vw;
+        top: 110vh;
+      }
+      .page2__image5 {
+        width: $p2_is;
+        position: absolute;
+        right: 10vw;
+        top: 130vh;
+      }
+      .page2__image6 {
+        width: $p2_is;
+        position: absolute;
+        left: 0;
+        top: 180vh;
+      }
+      .page2__image7 {
+        width: 40vw;
+        position: absolute;
+        right: 15vw;
+        top: 215vh;
+        z-index: 1;
+      }
     }
   }
 }
@@ -161,15 +174,17 @@ main {
     padding: 30vh 0 20vh 0;
     .page3__article1 {
       width: 20vw;
-      h2 {
+      h3 {
         display: none;
       }
       p {
         font-size: $headerP-fs;
         margin-bottom: 2vh;
       }
-      h1 {
+      h2 {
         font-size: 4rem;
+        letter-spacing: 1px;
+        font-weight: 500;
       }
     }
     .page3__article2 {
@@ -177,9 +192,6 @@ main {
       p {
         font-size: 1.5rem;
         margin-bottom: 2vh;
-      }
-      h1 {
-        font-size: 3rem;
       }
     }
   }
@@ -213,6 +225,11 @@ main {
     overflow: hidden;
 
     h2 {
+      font-size: 4rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    h3 {
       display: none;
     }
 
@@ -279,7 +296,7 @@ footer {
     width: 30vw;
     h5 {
       font-size: 0.8rem;
-      margin-bottom: 10px;
+      margin-bottom: 2vh;
     }
     p {
       font-size: 1.5rem;
@@ -291,8 +308,8 @@ footer {
     img {
       width: 30px;
       height: 30px;
-      margin-right: 10px;
-      margin-bottom: 10px;
+      margin-right: 2vw;
+      margin-bottom: 2vh;
     }
     .left-box__bottom-p {
       font-size: 0.9rem;
